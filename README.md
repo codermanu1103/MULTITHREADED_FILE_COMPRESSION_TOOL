@@ -13,6 +13,7 @@ DURATION - 6 WEEKS(May 21st 2025 to July 6th 2025)
 MENTOR - NEELA SANTHOSH KUMAR
 
 Description:
+
 🔹 Overall Structure
 The code is split into two main classes: FileCompressor and FileDecompressor.
 The program compresses and decompresses files using the zlib library, which provides efficient lossless data compression.
@@ -62,9 +63,11 @@ decompressBlock(DataBlock block):
 Expands the compressed data using uncompress() from zlib.
 The buffer is resized after decompression to match the actual decompressed size.
 Adds the decompressed block to the output queue.
+
 outputWriter(std::ofstream& output):
 Writes decompressed blocks to the output file in sequential order.
 Buffers any out-of-order blocks.
+
 decompressFile(const std::string& sourcePath, const std::string& destPath):
 Reads the compressed file block by block.
 Each block contains a block ID and size before the actual data.
